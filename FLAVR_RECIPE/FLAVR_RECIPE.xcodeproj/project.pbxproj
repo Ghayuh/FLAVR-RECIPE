@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		9D160F2322C9190100C1F177 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D160F2222C9190100C1F177 /* AppDelegate.swift */; };
-		9D160F2522C9190100C1F177 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D160F2422C9190100C1F177 /* ViewController.swift */; };
 		9D160F2822C9190100C1F177 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D160F2622C9190100C1F177 /* Main.storyboard */; };
 		9D160F2A22C9190300C1F177 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D160F2922C9190300C1F177 /* Assets.xcassets */; };
 		9D160F2D22C9190300C1F177 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D160F2B22C9190300C1F177 /* LaunchScreen.storyboard */; };
+		9DE3464822CA58E0007E2E14 /* LoginSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE3464722CA58E0007E2E14 /* LoginSignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9D160F1F22C9190100C1F177 /* FLAVR_RECIPE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FLAVR_RECIPE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D160F2222C9190100C1F177 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9D160F2422C9190100C1F177 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9D160F2722C9190100C1F177 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D160F2922C9190300C1F177 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D160F2C22C9190300C1F177 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D160F2E22C9190300C1F177 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DE3464722CA58E0007E2E14 /* LoginSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +54,22 @@
 		9D160F2122C9190100C1F177 /* FLAVR_RECIPE */ = {
 			isa = PBXGroup;
 			children = (
+				9DE3464622CA5878007E2E14 /* View Controller */,
 				9D160F2222C9190100C1F177 /* AppDelegate.swift */,
-				9D160F2422C9190100C1F177 /* ViewController.swift */,
 				9D160F2622C9190100C1F177 /* Main.storyboard */,
 				9D160F2922C9190300C1F177 /* Assets.xcassets */,
 				9D160F2B22C9190300C1F177 /* LaunchScreen.storyboard */,
 				9D160F2E22C9190300C1F177 /* Info.plist */,
 			);
 			path = FLAVR_RECIPE;
+			sourceTree = "<group>";
+		};
+		9DE3464622CA5878007E2E14 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9DE3464722CA58E0007E2E14 /* LoginSignUpViewController.swift */,
+			);
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D160F2522C9190100C1F177 /* ViewController.swift in Sources */,
+				9DE3464822CA58E0007E2E14 /* LoginSignUpViewController.swift in Sources */,
 				9D160F2322C9190100C1F177 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
