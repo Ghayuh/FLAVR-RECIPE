@@ -11,9 +11,10 @@ import UIKit
 class LoginSignUpViewController: UIViewController {
     
     //Properties
-    @IBOutlet weak var loginButton: UIButton!
-    @IBOutlet weak var dontHaveAccountLabel: UILabel!
-    @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var loginButton: CustomButton!
+    @IBOutlet weak var dontHaveAccountLabel: CustomLabel!
+    @IBOutlet weak var signUpButton: CustomButton!
+    @IBOutlet weak var flavrLabel: CustomLabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,19 +23,15 @@ class LoginSignUpViewController: UIViewController {
     
     func setUpProperties(){
         
-        let orange = UIColor.orange
+        signUpButton.makeCustomWhiteButton()
+        flavrLabel.setSpacing(space: 1.75)
         
-        //LOG IN BUTTON
-        loginButton.layer.cornerRadius = loginButton.layer.frame.height/2
-        
-        //SPACE
-//        let spacing = 1.5
-//        let buttonAtributedString = NSMutableAttributedString(attributedString: <#T##NSAttributedString#>)
-        
-        //SIGN UP BUTTON
-        signUpButton.layer.borderWidth = 2
-        signUpButton.layer.borderColor = orange.cgColor
-        signUpButton.layer.cornerRadius = signUpButton.layer.frame.height/2
+        // alternative if you call or still in UIButton class
+        //(signUpButton as! CustomButton).makeCustomWhiteButton()
+    }
+    
+    override var prefersStatusBarHidden: Bool{
+        return true
     }
 
 }
