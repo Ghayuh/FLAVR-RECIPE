@@ -30,8 +30,8 @@ class LoginSignUpViewController: UIViewController {
         //(signUpButton as! CustomButton).makeCustomWhiteButton()
     }
     
-    override var prefersStatusBarHidden: Bool{
-        return true
-    }
+//    override var prefersStatusBarHidden: Bool{
+//        return true
+//    }
 
 }

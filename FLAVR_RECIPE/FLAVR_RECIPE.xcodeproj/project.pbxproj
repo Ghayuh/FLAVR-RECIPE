@@ -11,9 +11,13 @@
 		9D160F2822C9190100C1F177 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D160F2622C9190100C1F177 /* Main.storyboard */; };
 		9D160F2A22C9190300C1F177 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D160F2922C9190300C1F177 /* Assets.xcassets */; };
 		9D160F2D22C9190300C1F177 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D160F2B22C9190300C1F177 /* LaunchScreen.storyboard */; };
+		9D7BB06B22CE5B7A004E91CD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7BB06A22CE5B7A004E91CD /* LoginViewController.swift */; };
+		9D7BB06D22CE6895004E91CD /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7BB06C22CE6895004E91CD /* CustomTextField.swift */; };
+		9D7BB06F22CE71E1004E91CD /* CustomUIColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7BB06E22CE71E1004E91CD /* CustomUIColorHex.swift */; };
 		9DC94A2222CBBC8A00AD37B0 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC94A2122CBBC8A00AD37B0 /* CustomButton.swift */; };
 		9DC94A2422CBD23C00AD37B0 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC94A2322CBD23C00AD37B0 /* CustomLabel.swift */; };
 		9DE3464822CA58E0007E2E14 /* LoginSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE3464722CA58E0007E2E14 /* LoginSignUpViewController.swift */; };
+		9DE9D00E22D2007200A63B72 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE9D00D22D2007200A63B72 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,9 +27,13 @@
 		9D160F2922C9190300C1F177 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D160F2C22C9190300C1F177 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D160F2E22C9190300C1F177 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D7BB06A22CE5B7A004E91CD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9D7BB06C22CE6895004E91CD /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		9D7BB06E22CE71E1004E91CD /* CustomUIColorHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIColorHex.swift; sourceTree = "<group>"; };
 		9DC94A2122CBBC8A00AD37B0 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		9DC94A2322CBD23C00AD37B0 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		9DE3464722CA58E0007E2E14 /* LoginSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignUpViewController.swift; sourceTree = "<group>"; };
+		9DE9D00D22D2007200A63B72 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +82,8 @@
 			children = (
 				9DC94A2122CBBC8A00AD37B0 /* CustomButton.swift */,
 				9DC94A2322CBD23C00AD37B0 /* CustomLabel.swift */,
+				9D7BB06C22CE6895004E91CD /* CustomTextField.swift */,
+				9D7BB06E22CE71E1004E91CD /* CustomUIColorHex.swift */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -82,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				9DE3464722CA58E0007E2E14 /* LoginSignUpViewController.swift */,
+				9D7BB06A22CE5B7A004E91CD /* LoginViewController.swift */,
+				9DE9D00D22D2007200A63B72 /* SignUpViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -158,8 +170,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DE3464822CA58E0007E2E14 /* LoginSignUpViewController.swift in Sources */,
+				9D7BB06F22CE71E1004E91CD /* CustomUIColorHex.swift in Sources */,
+				9DE9D00E22D2007200A63B72 /* SignUpViewController.swift in Sources */,
 				9D160F2322C9190100C1F177 /* AppDelegate.swift in Sources */,
+				9D7BB06D22CE6895004E91CD /* CustomTextField.swift in Sources */,
 				9DC94A2222CBBC8A00AD37B0 /* CustomButton.swift in Sources */,
+				9D7BB06B22CE5B7A004E91CD /* LoginViewController.swift in Sources */,
 				9DC94A2422CBD23C00AD37B0 /* CustomLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
