@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate{
     
     //UI View Properties
     @IBOutlet weak var emailTextField: CustomTextField!
@@ -16,18 +16,23 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        hideKeyboard()
-//        self.hideKeyboard()
-//        passwordTextField.delegate = self as? UITextFieldDelegate
+        
+        // initiate the textfield to delegate by itself.
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
     }
     
-    func hideKeyboard(){
-        let tap = UIGestureRecognizer(target: self, action: #selector(dissmissKeyboard))
-        tap.cancelsTouchesInView = false
-        self.view.addGestureRecognizer(tap)
-    }
-    
-    @objc func dissmissKeyboard(){
+    /* func : this function will hide the keyboard when tap the view. */
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+    }
+    
+    /* func : this function will hide the keyboard when "return" button on
+              keyboard press.
+     */
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        emailTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
+        return true
     }
 }

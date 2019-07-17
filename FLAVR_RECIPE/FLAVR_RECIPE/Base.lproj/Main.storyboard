@@ -134,10 +134,10 @@
             </objects>
             <point key="canvasLocation" x="857" y="54"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="st8-Wn-HEl">
             <objects>
-                <viewController id="H7n-iB-E1Q" sceneMemberID="viewController">
+                <viewController id="H7n-iB-E1Q" customClass="SignUpViewController" customModule="FLAVR_RECIPE" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZeI-eH-OG2"/>
                         <viewControllerLayoutGuide type="bottom" id="oSg-Da-zdH"/>
@@ -192,6 +192,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <outlet property="emailSignUpTextfield" destination="czV-sp-ZEQ" id="9rE-g8-xf0"/>
+                        <outlet property="nameSignUpTextfield" destination="TH9-z0-obx" id="R3K-bT-vff"/>
+                        <outlet property="passwordSignUpTextfield" destination="yWI-Ly-msH" id="NCy-AO-0jn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iq1-Py-hvA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
